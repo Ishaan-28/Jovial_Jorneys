@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Manage_styles.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="img/logo.png">
+        <meta name="viewport" content="width=device-width, intitial-scale=1.0">
+        <title>Manage Passenger</title>
+        <script defer src="./javascript/update-p.js"></script>
+    </head>
+    <body class="passenger_body">
+        
+        <header>
+            <div class="top-header">
+                <ul>
+                    <li><img src="img/logo.png" alt="logo"></li>
+                    <li></li><li></li><li></li><li></li><li></li>
+                    <li><a href="contact.html"><i class="fa fa-phone" ></i>Contact</a></li>
+                    <li><a href="contact.html"><i class="fa fa-envelope"></i>E-mail</a></li>
+                    <li><a href="contact.html"><i class="fa fa-map-marker"></i>Address</a></li>
+                </ul>
+            </div>
+            <a href="index.html"><i class="fa fa-home" ></i></a>
+        </header>
+    
+        <nav class="menu-bar">
+            <ul>
+                <li class="add_p home"><a href="manage-p.html">Add Passenger</a></li>
+                <li class="update_p home highlight"><a href="update-p.html">Update Passenger</a></li>
+                <li class="delete_p home"><a href="delete-p.html">Delete Passenger</a></li>
+            </ul>
+        </nav>
+        
+        <div class="update_p margin_add">
+            <br/> <br/>
+            <form id="form" action="" method="GET" onsubmit="return validation()">
+                <div class="box">
+                <label for="email" >Existing E-mail ID</label>
+                <br/> <br/>
+                <input type="email" id="email" placeholder="E-mail ID" size="30" >
+                <br/> <br/>
+                <label for="Email">New E-mail ID</label>
+                <br/> <br/>
+                <input type="email" id="Email" placeholder="New E-mail ID" size="30">
+                <br/> <br/>
+                <label for="password">Current Password</label>
+                <br/> <br/>
+                <input type="password" id="password" placeholder="Current Password" size="30">
+                <br/> <br/>
+                <label for="new-password">New Password</label>
+                <br/> <br/>
+                <input type="password" id="new-password" placeholder="New Password" size="30">
+                <br/> <br/>
+                <label for="number">New Phone Number</label>
+                <br/> <br/>
+                <input type="number" id="number" placeholder="New Number" size="30">
+                <br/> <br/>
+                <label for="dob">Date of Birth</label>
+                <br/> <br/>
+                <input type="date" id="dob" placeholder="Date of Birth" size="30">
+                <br/> <br/>
+                <label for="address">Address</label>
+                <br/> <br/>
+                <input type="text" id="address" placeholder="Address" size="30">
+                <br/> <br/> 
+                <br/> <br/>
+                <button>RESET</button>
+                <br/> <br/>
+                <button type="submit">SUBMIT</button>
+                </div>
+            </div>
+        </form> 
+        </div>
+
+        <footer>
+            <p class="copyright">Copyright 2020 Jovial Journeys</p>
+        </footer>
+
+    </body>
+</html>

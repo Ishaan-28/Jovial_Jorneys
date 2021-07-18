@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="login.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, intitial-scale=1.0">
+        <link rel="shortcut icon" href="img/logo.png">
+        <title>Login</title>
+    </head>
+    <body>
+        <header>
+          <div class="top-header">
+            <ul>
+                <li><img src="img/logo.png" alt="logo"></li>
+                <li></li><li></li><li></li><li></li>
+                <li><a href="contact.html"><i class="fa fa-phone" ></i>Contact</a></li>
+                <li><a href="contact.html"><i class="fa fa-envelope"></i>E-mail</a></li>
+                <li><a href="contact.html"><i class="fa fa-map-marker"></i>Address</a></li>
+            </ul>
+        </div>
+            <a href="index.html"><i class="fa fa-home" ></i></a>
+        </header>
+        <div class="login-page">
+            <div class="form">
+              <form class="register-form">
+                <div class="box">
+                    <select name="entity" id="entity">
+                        <option value="q1">Passenger</option>
+                        <option value="q2">Administrator</option>
+                        <option value="q3">Staff</option>
+                    </select>
+                </div>
+                <input type="text" placeholder="name"/ required>
+                <input type="email" placeholder="email address"/ required>
+                <input type="date" placeholder="dob"/ required> 
+                <input type="number" placeholder="phone"/ required>
+                <input type="password" placeholder="password"/ required>
+                <button>create</button>
+                <p class="message">Already registered? <a href="#">Sign In</a></p>
+              </form>
+              <form class="login-form">
+                <input type="text" placeholder="username"/ required>
+                <input type="password" placeholder="password"/ required>
+                <button onclick="myclick()">login</button>
+                <p class="message">Not registered? <a href="#">Create an account</a></p>
+              </form>
+            </div>
+          </div>
+          <!-- jquery -->
+          <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+          <script>
+            $('.message a').click(function(){
+            $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+            });
+            function myclick(){
+            document.location.href="myprofile.html";
+        }
+          </script>
+    </body>
+</html>

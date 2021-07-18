@@ -1,0 +1,149 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    box-sizing: border-box;
+
+}
+
+.top-header{
+    background-color:white;
+    z-index: 1;
+     position: fixed; 
+    width: 100%;
+    top: 0;
+    left: 0;
+} 
+.top-header ul{
+    white-space: nowrap;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.top-header li{
+    width: 10%;
+    height: 36px;
+    display: inline-block;
+    font-size: 16px;
+    color: #1d56d3;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
+.top-header li a{
+    text-decoration: none;
+    color: #1d56d3;
+}
+.top-header li a:hover{
+    color: orange;
+}
+.top-header img{
+    max-width: 70px;
+}
+.fa{
+    margin-right: 10px;
+}
+/***************************** Header ************************/
+.menu-bar{
+    background: orange; 
+    text-align: center;
+    /* padding :20px; */
+    margin-top: -4px;
+    position: sticky;
+    top: 68px;    
+    z-index: 1;
+    /* box-sizing: border-box; */
+    font-family: sans-serif;
+}
+
+
+/* =====================footer================================= */
+
+footer{
+    background: #1d56d3;
+    color: white;
+    padding: 20px; 
+    text-align: center;
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/**************************************form*****************************/
+label{
+    margin: 20px;
+    font-size: 15px;
+    font-family:"Roboto",sans-serif; 
+    color: blue;
+}
+input{
+    padding: 5px;
+    margin: 5px;
+    width: 100%;
+    /*border-radius: 36px; */
+    color:black;
+    font-family: "Roboto", sans-serif;
+    border-color:white;
+    opacity: 0.8;
+}
+ button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    /* background: #4CAF50; */
+    background: blue;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+  }
+.box{
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: rgba(128,128,128,0.3);
+    width: 500px;
+    border: 0px solid rgba(128,128,128,0.3);
+    margin: 20px;
+    padding: 50px;
+    box-sizing: border-box;
+    font-size: 14px;
+    /*opacity: 1; */
+}
+div{
+        margin: auto;
+        width: 38%;
+        border: 3px solid none;
+        padding: 10px;
+}
+body{
+    background-color: orange;
+}
+form input:focus{
+    border: 2px solid blue;
+    outline: orange;
+  }
+  form input:valid :focus{
+    border: 2px solid blue;
+  }
+  textarea{
+      opacity: 0.8;
+  }
+
+
+  /********************************** Body************************/
+  h1{
+      color: white;
+  }
+  body{
+      background-image: url(https://assets.telegraphindia.com/telegraph/2020/Jul/1595972233_1594320268_shutterstock_699697081.jpg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+  }

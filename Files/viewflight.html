@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>View Flights</title>
+  <link href="viewflight.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="img/logo.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, intitial-scale=1.0">
+</head>
+<body>
+
+    <header>
+        <div class="top-header">
+          <ul>
+              <li><img src="img/logo.png" alt="logo"></li>
+              <li></li><li></li><li></li><li></li>
+              <li><a href="contact.html"><i class="fa fa-phone" ></i>Contact</a></li>
+              <li><a href="contact.html"><i class="fa fa-envelope"></i>E-mail</a></li>
+              <li><a href="contact.html"><i class="fa fa-map-marker"></i>Address</a></li>
+          </ul>
+        </div>
+        <a href="index.html"><i class="fa fa-home" ></i></a>
+        <a href="payment.html"><i class="fa fa-credit-card" ></i></a>
+      </header>
+
+
+  <div class="wrapper">
+    <h1>SELECT FLIGHT</h1>
+    <ul class="panels">
+      <li>
+        <div class="front" style="background: #267df4">Spice Jet</div>
+        <div class="back" style="background: #4c8fea">8:20 - 10:25 | 3544 ₹</div>
+      </li>
+      <li>
+        <div class="front" style="background: #9126f4">Vistara</div>
+        <div class="back" style="background: #a144f7">6:50 - 9:00 | 3955 ₹</div>
+      </li>
+      <li>
+        <div class="front" style="background: #21bf3b">IndiGO</div>
+        <div class="back" style="background: #4dd763">18:20 - 20:25 | 3955 ₹</div>
+      </li>
+      <li>
+        <div class="front" style="background: #c3333d">GoAir</div>
+        <div class="back" style="background: #e74853">10:30 - 12:35 | 3956 ₹</div>
+      </li>
+      <li>
+        <div class="front" style="background: #c3333d">Air India</div>
+        <div class="back" style="background: #e74853">10:40 - 12:55 | 3955 ₹</div>
+      </li>
+      <li>
+        <div class="front" style="background: #21bf3b"><i class="fa fa-plane" ></i></div>
+        <div class="back" style="background: #4dd763">Flight Details</div>
+      </li>
+      <li>
+        <div class="front" style="background: #9126f4"><i class="fa fa-plane" ></i></div>
+        <div class="back" style="background: #a144f7">Flight Details</div>
+      </li>
+      <li>
+        <div class="front" style="background: #267df4"><i class="fa fa-plane" ></i></div>
+        <div class="back" style="background: #4c8fea">Flight Details</div>
+      </li>
+    </ul>
+    <button onclick="myclick()" >Pay</button>
+    <script>
+        function myclick(){
+            document.location.href="payment.html";
+        }
+    </script>
+  </div>
+  <br><br><br>
+<footer>
+    <p class="copyright">Copyright 2020 Jovial Journeys</p>
+</footer>
+</body>
+</html>

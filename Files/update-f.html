@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Manage_styles.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="img/logo.png">
+        <meta name="viewport" content="width=device-width, intitial-scale=1.0">
+        <title>Manage Flight</title>
+        <script defer src="./javascript/update-f.js"></script>
+    </head>
+    <body class="flight_body">
+        
+        <header>
+            <div class="top-header">
+                <ul>
+                    <li><img src="img/logo.png" alt="logo"></li>
+                    <li></li><li></li><li></li><li></li><li></li>
+                    <li><a href="contact.html"><i class="fa fa-phone" ></i>Contact</a></li>
+                    <li><a href="contact.html"><i class="fa fa-envelope"></i>E-mail</a></li>
+                    <li><a href="contact.html"><i class="fa fa-map-marker"></i>Address</a></li>
+                </ul>
+            </div>
+            <a href="index.html"><i class="fa fa-home" ></i></a>
+        </header>
+    
+        <nav class="menu-bar">
+            <ul>
+                <li class="add_f home"><a href="manage-f.html">Add Flight</a></li>
+                <li class="update_f home highlight"><a href="update-f.html">Update Flight</a></li>
+                <li class="delete_f home"><a href="delete-f.html">Delete Flight</a></li>
+            </ul>
+        </nav>
+        
+        <div class="update_f margin_add">
+            <br/> <br/>
+            <form id="form" method="GET" action="" onsubmit=" return validation()">
+               <div class="box">
+            <label for="ex-number"> Existing Flight Number</label>
+            <br/> <br/>
+            <input type="text" id="ex-number" placeholder="Existing Flight Number" size="30">
+            <br/> <br/>
+            <label for="current-no">New Flight Number</label>
+            <br/> <br/>
+            <input type="text" id="current-no" placeholder="New Flight No.." size="30">
+            <br/> <br/>
+            <label for="ex-name">Current Name</label>
+            <br/> <br/>
+            <input type="text" id="ex-name" placeholder=" Current Name" size="30">
+            <br/> <br/>
+            <label for="name">New Name</label>
+            <br/> <br/>
+            <input type="text" id="name" placeholder="New Name" size="30">
+            <br/> <br/>
+            <label for="cur-sou">Current Source</label>
+            <br/> <br/>
+            <input type="text" id="cur-sou" placeholder="Current Source" size="30">
+            <br/> <br/>
+            <label for="new-sou">New Source</label>
+            <br/> <br/>
+            <input type="text" id="new-sou" placeholder="New Source" size="30">
+            <br/> <br/>
+            <label for="ex-dest">Current Destination </label>
+            <br/> <br/>
+            <input type="text" id="ex-dest" placeholder="Current Destination" size="30">
+            <br/> <br/>
+            <label for="new-dest">New Destination</label>
+            <br/> <br/>
+            <input type="text" id="new-dest" placeholder="New Destination.." size="30">
+            <br/> <br/>
+            <label for="timing">Timing</label>
+            <br/> <br/>
+            <input type="time" id="timing" placeholder="New Timing" size="30">
+            <br/> <br/>
+            <br/> <br/>
+            <button>RESET</button>
+             <br/> <br/>
+             <button type="submit">SUBMIT</button>
+        </div>
+        </form> 
+        </div>
+
+        <footer>
+            <p class="copyright">Copyright 2020 Jovial Journeys</p>
+        </footer>
+
+    </body>
+</html>

@@ -1,0 +1,158 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+body{
+  background-color: orange;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;  
+}
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.form {
+  position: relative;
+  top: 100px;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  /* background: #4CAF50; */
+  background: blue;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: rgb(74, 74, 252);
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: orange;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+.box{
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.box select{
+    background: #f2f2f2;
+    border: none;
+    padding: 10px auto;
+    outline: none;
+    color: #868686;
+    font-size: 15px;
+    width: 250px;
+    font-weight: lighter;
+}
+
+
+header{
+    text-align: right;
+    font-size: 50px;
+}
+header a .fa-home{
+  position: absolute;
+  top: 80px;
+  right: 50px;
+    margin:20px;
+    padding: 30px;
+    color: white;
+}
+header a .fa-home:hover{
+    color: blue;
+}
+
+
+.top-header{
+  background-color:white;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+} 
+.top-header ul{
+  white-space: nowrap;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.top-header li{
+  width: 10%;
+  height: 36px;
+  display: inline-block;
+  font-size: 16px;
+  color: #1d56d3;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+}
+.top-header li a{
+  text-decoration: none;
+  color: #1d56d3;
+  font-family: arial;
+}
+.top-header li a:hover{
+  color: orange;
+}
+.top-header img{
+  max-width: 70px;
+}
+.fa{
+  margin-right: 10px;
+}
+.top-header li img{
+  position: absolute;
+  left: 30px;
+  top: 20px;
+}
+
+form input:focus{
+  border: 2px solid orange;
+  outline: none;
+}
+form input:valid{
+  border: 2px solid #71d300;
+}
+
+
